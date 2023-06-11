@@ -40,14 +40,18 @@ python main.py
 ## Screenshots
 
 ![Screenshot 1](/screenshot1.png)
-![Screenshot 2](/screenshot3.png)
-![Screenshot 2](/screenshot2.png)
 
 ## Demo
 
 You can try out the running web application [here](https://social-media-searcher.onrender.com/).
 
+![Screenshot 2](/screenshot3.png)
+
 **Note:** The demo version may have limited capabilities compared to running the application locally due to API restrictions.
+
+![Screenshot 2](/screenshot2.png)
+
+
 
 ## License
 
