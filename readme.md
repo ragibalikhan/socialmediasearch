@@ -24,7 +24,7 @@ cd socialmediasearcher
 
 3. Obtain a YouTube API key by following the instructions [here](https://developers.google.com/youtube/registering_an_application).
 
-4. Open the `app.py` file and replace `'YOUR_API_KEY'` with your YouTube API key in the `API_KEY` variable.
+4. Open the `main.py` file and replace `'YOUR_API_KEY'` with your YouTube API key in the `API_KEY` variable.
 
 5. Run the application:
 
