@@ -1,0 +1,406 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F4F4F4;
+  color: #333333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.section-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.infos {
+  flex-grow: 1;
+}
+
+h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  margin-right: 10px; /* Add a margin to the right of the search box */
+}
+
+.theme-btn {
+  background-color: #007AFF;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Add a margin to the left of the search button */
+  margin-top: 15px;
+}
+
+.inner-profile-icons {
+  margin-top: 90px;
+  text-align: center;
+  margin-left: -5px; /* Adjust the margin to fine-tune the spacing */
+}
+
+.inner-profile-icons a {
+  margin-right: 12px;
+}
+
+.inner-profile-icons a:last-child {
+  margin-right: 0;
+}
+
+/* Update iconoir styles */
+[class^="iconoir-"]:before {
+  font-family: "Iconoir";
+  font-style: normal;
+  speak: none;
+  display: inline-block;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconoir-instagram:before {
+  content: "\EA02";
+}
+
+.iconoir-twitter:before {
+  content: "\EA08";
+}
+
+.iconoir-telegram:before {
+  content: "\EA06";
+}
+
+.iconoir-github:before {
+  content: "\EA09";
+}
+
+/* Result styles */
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results-list li {
+  margin-bottom: 30px;
+}
+
+.results-list h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.results-list .account-found {
+  color: green;
+  font-weight: bold;
+}
+
+.results-list .account-not-found {
+  color: red;
+  font-weight: bold;
+}
+
+.results-list .profile-link {
+  margin-top: 10px;
+}
+
+.results-list .profile-link a {
+  color: #007AFF;
+  text-decoration: none;
+}
+
+/* Iconoir icons */
+.iconoir {
+  display: inline-block;
+  font-family: "Iconoir";
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconoir-instagram:before {
+  content: "\EA02";
+}
+
+.iconoir-twitter:before {
+  content: "\EA08";
+}
+
+.iconoir-telegram:before {
+  content: "\EA06";
+}
+
+.iconoir-github:before {
+  content: "\EA09";
+}
+
+/* Media Queries for Mobile Responsive */
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  nav ul li a:hover {
+    color: #666;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .section-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .theme-btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .inner-profile-icons {
+    margin-top: 50px;
+  }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+/* Common styles */
+.container {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.account-container {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.iconoir {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.account-found {
+  color: #007AFF;
+}
+
+.account-not-found {
+  color: red;
+  font-weight: bold;
+}
+
+.profile-link {
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-text {
+  color: #3498db; /* Blue color */
+  font-size: 18px;
+}
+
+.loading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  border-top-color: transparent;
+  animation: spin-pulse 1.5s linear infinite;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  z-index: 1;
+}
+
+@keyframes spin-pulse {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+/* CSS for desktop devices */
+nav {
+  background-color: #1F1F1F;
+  padding: 15px 10px; /* Added top padding to create space */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007AFF;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* CSS for mobile devices */
+/* ... (loading ) ...
+
+.loading {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #888;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #888;
+  border-top-color: #555;
+  animation: spinner 0.6s linear infinite;
+}  */
+
+/* End of style.css */

@@ -1,0 +1,121 @@
+/* iOS specific styles */
+body {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.container {
+  background-color: #2E2E2E;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-heading {
+  color: #FFFFFF;
+}
+
+.info-box {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.infos {
+  border-bottom: 1px solid #333333;
+}
+
+h4 {
+  color: #FFFFFF;
+}
+
+input[type="text"] {
+  background-color: #2E2E2E;
+  color: #FFFFFF;
+  border: 1px solid #333333;
+}
+
+.theme-btn {
+  background-color: #007AFF;
+  color: #FFFFFF;
+}
+
+.inner-profile-icons a {
+  color: #007AFF;
+}
+
+.inner-profile-icons a:hover {
+  color: #FFFFFF;
+}
+
+/* Update iconoir styles */
+[class^="iconoir-"]:before {
+  font-family: "Iconoir";
+  font-style: normal;
+  speak: none;
+  display: inline-block;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconoir-facebook:before {
+  content: "\EA01";
+}
+
+.iconoir-instagram:before {
+  content: "\EA02";
+}
+
+.iconoir-pinterest:before {
+  content: "\EA03";
+}
+
+/* reddit and quora */
+.iconoir-telegram:before {
+  content: "\EA06";
+}
+
+.iconoir-youtube:before {
+  content: "\EA07";
+}
+
+/* Account container styles */
+.account-container {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.account-container h2 {
+  color: #FFFFFF;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.account-container p {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.account-container a {
+  color: #007AFF;
+}
+
+.account-container a:hover {
+  color: #FFFFFF;
+}
+
+/* Added styles for account status */
+.account-not-found p {
+  color: red;
+}
+
+.account-found p {
+  color: green;
+}

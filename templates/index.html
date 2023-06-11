@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Account Checker</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ios-style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='iconoir.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mobile.css') }}" media="only screen and (max-width: 767px)">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://ragib-ali.netlify.app" target="_blank">About</a></li>
+      <li><a href="https://ragib-ali.netlify.app" target="_blank">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1 class="section-heading">Social Media Account Checker</h1>
+    <form class="info-box" action="/" method="POST" onsubmit="showLoading()">
+      <img src="{{ url_for('static', filename='images/user.png') }}" alt="User Icon">
+      <div class="infos">
+        <h4>Enter Email or Username:</h4>
+        <input type="text" id="query" name="query" required>
+        <br>
+        <input class="theme-btn" type="submit" value="Search">
+      </div>
+      <div class="inner-profile-icons gap-24">
+        <a href="https://instagram.com/ragib_ali_khan" target="_blank"><span class="iconoir-instagram"></span></a>
+        <a href="https://twitter.com/ragibalikhan5" target="_blank"><span class="iconoir-twitter"></span></a>
+        <a href="https://telegram.me/ragibalikhan" target="_blank"><span class="iconoir-telegram"></span></a>
+        <a href="https://github.com/ragibalikhan/" target="_blank"><span class="iconoir-github"></span></a>
+      </div>
+    </form>
+    <div id="loading" class="loading">
+      <div class="lds-spinner">
+        <div></div>
+      </div>
+      <p>Searching...</p>
+    </div>
+  </div>
+  <script>
+    function showLoading() {
+      var loading = document.getElementById('loading');
+      loading.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
