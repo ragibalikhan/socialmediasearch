@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import os
 from googleapiclient.discovery import build
 
-API_KEY = 'YOUTUBE_API_KEY'
+API_KEY = 'AIzaSyAj_kWqJLHraay-DZxYPmdItuh0BOw3IHM'
 
 app = Flask(__name__)
 
